@@ -1,2 +1,9 @@
 .min-vh-50{min-height: 50vh;}
 .min-vh-75{min-height: 75vh;}
+.link{
+    color: black !important;
+    text-decoration: none !important;
+}
+.link:hover{
+    text-decoration: underline !important;
+}
