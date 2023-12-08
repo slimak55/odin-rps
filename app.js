@@ -25,14 +25,13 @@ sci.addEventListener('click', function() {
     game();
 
 });
+
 // 0 = Rock
 //1 = Paper
 //2 = Scissors
 
-
-
 function playRound(playerSelection, computerSelection) {
-    
+
     let player = parseInt(playerSelection)
 
     switch(computerSelection){
@@ -118,10 +117,4 @@ function game(){
     else{ 
         playRound(playerSelection, computerSelection);
     }
-
-
-
-
-
-
 }
