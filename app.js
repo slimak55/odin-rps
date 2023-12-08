@@ -99,26 +99,24 @@ function game(){
     if(score_pc == 3)
     {
         alert("Computer Wins");
-        score_pc = 0;
-        score_player = 0;
-        document.getElementById("score").innerHTML = "0 : 0";
-        document.getElementById("img_pc").src=" ";
-        document.getElementById("img_player").src=" ";
-        document.getElementById("pc").innerHTML = "";
-        document.getElementById("player").innerHTML = "";
+        reset();
     }
     else if(score_player == 3)
     {
         alert("Player Wins");
-        score_pc = 0;
-        score_player = 0;
-        document.getElementById("score").innerHTML = "0 : 0";
-        document.getElementById("img_pc").src=" ";
-        document.getElementById("img_player").src=" ";
-        document.getElementById("pc").innerHTML = "";
-        document.getElementById("player").innerHTML = "";
+        reset();
     }
     else{ 
         playRound(playerSelection, computerSelection);
     }
+}
+
+function reset(){
+    score_pc = 0;
+    score_player = 0;
+    document.getElementById("score").innerHTML = "0 : 0";
+    document.getElementById("img_pc").src=" ";
+    document.getElementById("img_player").src=" ";
+    document.getElementById("pc").innerHTML = "";
+    document.getElementById("player").innerHTML = "";
 }
